@@ -94,7 +94,7 @@ int DataInputLen = 0;
 
 //	Main TX Buffer
 
-UCHAR bytDataToSend[100000];
+extern UCHAR bytDataToSend[];
 
 extern char LogDir[256];
 

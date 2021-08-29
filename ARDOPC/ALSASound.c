@@ -28,7 +28,7 @@ int WriteLog(char * msg, int Log);
 int _memicmp(unsigned char *a, unsigned char *b, int n);
 int stricmp(const unsigned char * pStr1, const unsigned char *pStr2);
 int gpioInitialise(void);
-HANDLE OpenCOMPort(VOID * pPort, int speed, BOOL SetDTR, BOOL SetRTS, BOOL Quiet, int Stopbits);
+HANDLE OpenCOMPort(char * pPort, int speed, BOOL SetDTR, BOOL SetRTS, BOOL Quiet, int Stopbits);
 
 VOID COMSetDTR(HANDLE fd);
 VOID COMClearDTR(HANDLE fd);

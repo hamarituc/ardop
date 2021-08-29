@@ -156,7 +156,6 @@ int intPSKSymbolsDecoded;
 int intQAMQuality;
 int intQAMQualityCnts;
 int intQAMSymbolsDecoded;
-int intGoodAPSKSummationDecodes;
 
 
 char stcLastPingstrSender[10];

@@ -19,5 +19,5 @@ ardop2: $(OBJS)
 -include *.d
 
 clean :
-	rm ardop2 $(OBJS)
-
+	rm -f ardop2 $(OBJS) output.map
+	rm -f *.d

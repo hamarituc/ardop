@@ -19,5 +19,5 @@ ardopofdm: $(OBJS)
 -include *.d
 
 clean :
-	rm ardopofdm $(OBJS)
-
+	rm -f ardopofdm $(OBJS) output.map
+	rm -f *.d

@@ -37,7 +37,7 @@
 #define TFESC 0xDD
 
 
-HANDLE OpenCOMPort(VOID * pPort, int speed, BOOL SetDTR, BOOL SetRTS, BOOL Quiet, int Stopbits);
+HANDLE OpenCOMPort(char * pPort, int speed, BOOL SetDTR, BOOL SetRTS, BOOL Quiet, int Stopbits);
 int ReadCOMBlock(HANDLE fd, char * Block, int MaxLength);
 VOID ProcessKISSBlock(UCHAR * KISSBUFFER, int Len);
 VOID EncodePacket(UCHAR * Data, int Len);
@@ -48,8 +48,6 @@ VOID ProcessKISSControlFrame();
 VOID ptkSessionBG();
 
 
-
-HANDLE hDevice;
 
 char KISSPORTNAME[80] = "";  // for now just support over Host Interface;
 

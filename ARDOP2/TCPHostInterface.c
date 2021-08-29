@@ -83,7 +83,7 @@ int DataInputLen = 0;
 
 //	Main TX Buffer
 
-UCHAR bytDataToSend[100000];
+extern UCHAR bytDataToSend[];
 
 
 /*UINT FREE_Q = 0;

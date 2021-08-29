@@ -19,5 +19,5 @@ ardopc: $(OBJS)
 -include *.d
 
 clean :
-	rm ardopc $(OBJS)
-
+	rm -f ardopc $(OBJS) output.map
+	rm -f *.d

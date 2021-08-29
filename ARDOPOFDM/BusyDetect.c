@@ -30,7 +30,6 @@ int dttLastBusyTrip = 0;
 int dttPriorLastBusyTrip = 0;
 int dttLastBusyClear = 0;
 int dttLastTrip;
-float dblAvgPk2BaselineRatio, dblAvgBaselineSlow, dblAvgBaselineFast;
 int intHoldMs = 5000;
 
 

@@ -3,8 +3,8 @@
 #ifndef ARDOPCHEADERDEFINED
 #define ARDOPCHEADERDEFINED
 
-const char ProductName[] = "ARDOP TNC";
-const char ProductVersion[] = "1.0.4.1q-OFDMBPQ";
+extern const char ProductName[];
+extern const char ProductVersion[];
 
 #ifdef CONST
 #undef CONST

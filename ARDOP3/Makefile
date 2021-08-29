@@ -19,7 +19,5 @@ ardop3: $(OBJS)
 -include *.d
 
 clean :
-	rm ardop3 $(OBJS)
-	rm *.d
-	
-
+	rm -f ardop3 $(OBJS) output.map
+	rm -f *.d

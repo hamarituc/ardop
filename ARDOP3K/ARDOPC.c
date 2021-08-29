@@ -153,7 +153,6 @@ int intPSKSymbolsDecoded;
 int intQAMQuality;
 int intQAMQualityCnts;
 int intQAMSymbolsDecoded;
-int intGoodAPSKSummationDecodes;
 
 
 char stcLastPingstrSender[10];
@@ -2360,8 +2359,8 @@ BOOL MainPoll()
 int dttLastBusy;
 int dttLastClear;
 int dttStartRTMeasure;
-int intLastStart;
-int intLastStop;
+extern int intLastStart;
+extern int intLastStop;
 float dblAvgBaselineSlow;
 float dblAvgBaselineFast;
 float dblAvgPk2BaselineRatio;

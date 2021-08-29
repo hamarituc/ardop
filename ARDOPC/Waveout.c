@@ -25,7 +25,7 @@
 void printtick(char * msg);
 void PollReceivedSamples();
 
-HANDLE OpenCOMPort(VOID * pPort, int speed, BOOL SetDTR, BOOL SetRTS, BOOL Quiet, int Stopbits);
+HANDLE OpenCOMPort(char * pPort, int speed, BOOL SetDTR, BOOL SetRTS, BOOL Quiet, int Stopbits);
 VOID COMSetDTR(HANDLE fd);
 VOID COMClearDTR(HANDLE fd);
 VOID COMSetRTS(HANDLE fd);
@@ -895,7 +895,7 @@ void displayCall(int dirn, char * call)
 	SendtoGUI('I', Msg, strlen(Msg));
 }
 
-HANDLE OpenCOMPort(VOID * pPort, int speed, BOOL SetDTR, BOOL SetRTS, BOOL Quiet, int Stopbits)
+HANDLE OpenCOMPort(char * pPort, int speed, BOOL SetDTR, BOOL SetRTS, BOOL Quiet, int Stopbits)
 {
 	char szPort[80];
 	BOOL fRetVal ;

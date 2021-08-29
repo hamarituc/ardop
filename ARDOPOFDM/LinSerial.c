@@ -153,7 +153,7 @@ static struct speed_struct
 };
 
 
-HANDLE OpenCOMPort(VOID * Port, int speed, BOOL SetDTR, BOOL SetRTS, BOOL Quiet, int Stopbits)
+HANDLE OpenCOMPort(char * Port, int speed, BOOL SetDTR, BOOL SetRTS, BOOL Quiet, int Stopbits)
 {;
 	char buf[100];
 
@@ -291,7 +291,7 @@ VOID COMClearRTS(HANDLE fd)
 
 UCHAR RXBUFFER[500]; // Long enough for stuffed Host Mode frame
 
-int RXBPtr = 0;
+extern volatile int RXBPtr;
 
 
 VOID SerialHostPoll()

@@ -9,7 +9,7 @@ extern int intFECFramesSent;
 void SendData();
 BOOL CheckForDisconnect();
 int ComputeInterFrameInterval(int intRequestedIntervalMS);
-HANDLE OpenCOMPort(VOID * pPort, int speed, BOOL SetDTR, BOOL SetRTS, BOOL Quiet, int Stopbits);
+HANDLE OpenCOMPort(char * pPort, int speed, BOOL SetDTR, BOOL SetRTS, BOOL Quiet, int Stopbits);
 BOOL WriteCOMBlock(HANDLE fd, char * Block, int BytesToWrite);
 void SetupGPIOPTT();
 VOID ConvertCallstoAX25();

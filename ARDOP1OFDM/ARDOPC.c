@@ -18,6 +18,9 @@
 #include "ARDOPC.h"
 #include "getopt.h"
 
+const char ProductName[] = "ARDOP TNC";
+const char ProductVersion[] = "1.0.4.1q-OFDMBPQ";
+
 void CompressCallsign(char * Callsign, UCHAR * Compressed);
 void CompressGridSquare(char * Square, UCHAR * Compressed);
 void  ASCIIto6Bit(char * Padded, UCHAR * Compressed);
@@ -149,7 +152,6 @@ int intOFDMSymbolsDecoded;
 int intQAMQuality;
 int intQAMQualityCnts;
 int intQAMSymbolsDecoded;
-int intGoodQAMSummationDecodes;
 
 
 char stcLastPingstrSender[10];
@@ -2631,8 +2633,8 @@ BOOL MainPoll()
 int dttLastBusy;
 int dttLastClear;
 int dttStartRTMeasure;
-int intLastStart;
-int intLastStop;
+extern int intLastStart;
+extern int intLastStop;
 float dblAvgBaselineSlow;
 float dblAvgBaselineFast;
 float dblAvgPk2BaselineRatio;

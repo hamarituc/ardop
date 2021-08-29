@@ -237,6 +237,7 @@ int intPhaseError = 0;
 BOOL Acquire2ToneLeaderSymbolFraming();
 BOOL SearchFor2ToneLeader4(short * intNewSamples, int Length, float * dblOffsetHz, int * intSN);
 BOOL AcquireFrameSyncRSBAvg();
+BOOL AcquireFrameSyncRSB();
 int Acquire4PSKFrameType();
 void Get4PSKPhaseTargets(UCHAR bytFrameCode, UCHAR bytID, short * intPhaseTargets);
 UCHAR AddTypeParity(UCHAR bytFrameType);
