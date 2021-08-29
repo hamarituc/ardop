@@ -1,0 +1,9 @@
+ARDOPC is the C version of the ARDOP version 1 series. It is compatible with the Windows ARDOP TNC that comes with Winlink.
+
+ARDOP2 is the C version of ARDOP 2. The Windows version has a tuning issue but the C Version does not. It generally performs better than ARDOP1, but is not supported by Winlink.
+
+ARDOP1OFDM and ARDOPOFDM have added ofdm modes. In good conditions the ofdm modes are significantly faster and are more robust in less good conditions. It accepts connections from ARDOP stations, and can connect to them if the odfm extensions are switched off. But again are not supported by Winlink software.
+
+ARDOP3 was abandoned by the WDT before it was completed. ARDOP3K is the latest (but still not fully functional) version.
+
+Only ARDOPC is supported by Winlink software.
